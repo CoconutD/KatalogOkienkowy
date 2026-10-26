@@ -19,6 +19,16 @@ namespace KatalogOkienkowy
         public MainWindow()
         {
             InitializeComponent();
+
+            List<Produkt> produkty = new List<Produkt>
+            {
+                new Produkt("Mleko", 2.5, "Nabiał", 10),
+                new Produkt("Chleb", 3.0, "Pieczywo", 5),
+                new Produkt("Jajka", 1.5, "Nabiał", 20),
+                new Produkt("Masło", 4.0, "Nabiał", 8),
+                new Produkt("Ser żółty", 6.0, "Nabiał", 12)
+            };
+            EtykietaLiczbaProduktow.Text = $"Produktów: {produkty.Count}";
         }
     }
 }
